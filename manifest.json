@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "Github Extension",
+	"version": "1.0",
+	"description": "Extension for displaying trending github repos and search by them.",
+	"icons": {
+		"16": "ico.png",
+		"48": "ico.png",
+		"128": "ico.png"
+	},
+	"browser_action": {
+		"default_title": "Github Viewer",
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+		"tabs", "http://*/*", "https://*/*", "storage"
+	]
+}

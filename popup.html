@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Github View</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="octocat-circle.png" alt="Logo">
+      </div>
+      <div class="ext-title">GitHub Viewer!</div>
+    </div>
+    <div class="tab-buttons">
+      <div id="1" class="tab-button active">Most popular Repos</div>
+      <div id="2" class="tab-button">Search Repos</div>
+    </div>
+    <div id="tabcontent1" class="tab">
+      <div class="popular-repos-button">
+        Show Repositories
+      </div>
+      <div id="full-content" class="hidden">
+        <div class="search-sort">
+          <div>
+            <input type="text" id="search-params" >
+            <button id="search-button">Search</button>
+          </div>
+          <div class="sort">
+            <span>Sort by:</span>
+            <span class="sort-param active" id="stars"> stars </span>|
+            <span class="sort-param" id="issues"> issues </span>|
+            <span class="sort-param" id="forks"> forks </span>
+          </div>
+        </div>
+        <div class="scrollbar" id="scrollbar">
+          <ul id="repos-list" class="repos-list">
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="tabcontent2" class="tab hidden">
+      <div class="search-description">
+        Search for users repositories or some specific repo! E.g. facebook or facebook/react
+      </div>
+      <div class="search-field">
+        <input type="text" id="search-by-author">
+        <button id="search-by-author-button">Search</button>
+      </div>
+      <div class="result-search">
+        <div id="hidescrollbar" class="hidden">
+          <div class="scrollbar" id="scrollbar">
+            <ul id="user-repos-list">
+            </ul>
+          </div>
+        </div>
+        <div id="solo-repository-result" class="hidden">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
